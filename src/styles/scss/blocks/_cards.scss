@@ -1,0 +1,20 @@
+@include mobile {
+    .cards {
+        @include flex-center;
+        @include flex-column;
+
+        &-title {
+            margin-top: 60px;
+            font-size: 26px;
+            line-height: 49px;
+            color: $b-color;
+        }
+
+        &-descr {
+            font-size: $px-size-mbile-xs;
+            line-height: 125.94%;
+            text-align: center;
+            color: $b-color;
+        }
+    }
+}

@@ -1,0 +1,41 @@
+@import './base/variables';
+@import './base/mixins';
+@import './base/media-brakepoints.scss';
+
+@import './blocks/header';
+@import './blocks/promo';
+@import './blocks/block';
+@import './blocks/cards';
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: $m-font-rg;
+    font-weight: normal;
+    font-style: normal;
+}
+
+a {text-decoration: none;}
+ul {list-style: none;}
+body {max-width: 100%}
+
+@font-face {
+    font-family: 'Gilroy-Regular';
+    src: url(/fonts/Gilroy-Regular.woff2);
+
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy-Semibold';
+    src: url(/fonts/Gilroy-Semibold.woff2);
+
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy-Bold';
+    src: url(/fonts/Gilroy-Bold.woff2);
+
+    font-style: normal;
+}

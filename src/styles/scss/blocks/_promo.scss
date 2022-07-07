@@ -1,0 +1,49 @@
+@include mobile {
+    .promo {
+        width: 100%;
+        background: $g-color;
+        @include flex-center;
+        flex-direction: column;
+
+        &-title {
+            margin: 60px 0 0;
+            width: 290px;
+            height: 260px;
+            @include flex-start;
+            @include flex-column;
+
+            &__name {
+                font-size: 36px;
+                line-height: 49px;
+                color: $b-color;
+                font-family: $m-font-sb;
+            }
+
+            &__descr {
+                font-size: $px-size-mbile-s;
+                line-height: 120.62%;
+                color: $b-color;
+            }
+
+            &__btn {
+                @include flex-center;
+                width: 180px;
+                height: 45px;
+                background: $main-color;
+                border-radius: $radius;
+                text-transform: $upper-case;
+                font-size: $px-size-mbile-xs;
+                color: $w-color;
+            }
+        }
+
+        &-img {
+            margin-top: 50px;
+            width: 100%;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}

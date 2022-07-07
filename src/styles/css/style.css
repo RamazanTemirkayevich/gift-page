@@ -1,0 +1,264 @@
+@media (min-width: 320px) {
+  /* line 2, ../../../../../../../../../../../../../Users/family/Desktop/page-gift/src/styles/scss/blocks/_header.scss */
+  .header {
+    width: 100%;
+    height: 70px;
+    background: #FAFAFA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  /* line 8, ../../../../../../../../../../../../../Users/family/Desktop/page-gift/src/styles/scss/blocks/_header.scss */
+  .header-wrapper {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  /* line 12, ../../../../../../../../../../../../../Users/family/Desktop/page-gift/src/styles/scss/blocks/_header.scss */
+  .header-wrapper__menu {
+    display: block;
+    position: relative;
+    width: 25px;
+    height: 20px;
+    z-index: 2;
+  }
+  /* line 20, ../../../../../../../../../../../../../Users/family/Desktop/page-gift/src/styles/scss/blocks/_header.scss */
+  .header-wrapper__menu span {
+    position: absolute;
+    background-color: #000000;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    top: 9px;
+    transition: 0.5s;
+    border-radius: 5px;
+  }
+  /* line 33, ../../../../../../../../../../../../../Users/family/Desktop/page-gift/src/styles/scss/blocks/_header.scss */
+  .header-wrapper__menu--active > span {
+    transform: scale(0);
+  }
+  /* line 39, ../../../../../../../../../../../../../Users/family/Desktop/page-gift/src/styles/scss/blocks/_header.scss */
+  .header-wrapper__menu::before {
+    content: '';
+    background-color: #000000;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    transition: 0.5s;
+    border-radius: 5px;
+  }
+  /* line 50, ../../../../../../../../../../../../../Users/family/Desktop/page-gift/src/styles/scss/blocks/_header.scss */
+  .header-wrapper__menu::after {
+    content: '';
+    background-color: #000000;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    transition: 0.5s;
+    border-radius: 5px;
+  }
+  /* line 61, ../../../../../../../../../../../../../Users/family/Desktop/page-gift/src/styles/scss/blocks/_header.scss */
+  .header-wrapper__menu::before {
+    top: 0;
+  }
+  /* line 65, ../../../../../../../../../../../../../Users/family/Desktop/page-gift/src/styles/scss/blocks/_header.scss */
+  .header-wrapper__menu::after {
+    bottom: 0;
+  }
+  /* line 70, ../../../../../../../../../../../../../Users/family/Desktop/page-gift/src/styles/scss/blocks/_header.scss */
+  .header-wrapper__menu--active::before {
+    transform: rotate(45deg);
+    top: 9px;
+  }
+  /* line 74, ../../../../../../../../../../../../../Users/family/Desktop/page-gift/src/styles/scss/blocks/_header.scss */
+  .header-wrapper__menu--active::after {
+    transform: rotate(-45deg);
+    bottom: 9px;
+  }
+}
+
+@media (min-width: 320px) {
+  /* line 2, ../../../../../../../../../../../../../Users/family/Desktop/page-gift/src/styles/scss/blocks/_promo.scss */
+  .promo {
+    width: 100%;
+    background: #F1F1F2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  /* line 8, ../../../../../../../../../../../../../Users/family/Desktop/page-gift/src/styles/scss/blocks/_promo.scss */
+  .promo-title {
+    margin: 60px 0 0;
+    width: 290px;
+    height: 260px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  /* line 15, ../../../../../../../../../../../../../Users/family/Desktop/page-gift/src/styles/scss/blocks/_promo.scss */
+  .promo-title__name {
+    font-size: 36px;
+    line-height: 49px;
+    color: #000000;
+    font-family: "Gilroy-Semibold";
+  }
+  /* line 22, ../../../../../../../../../../../../../Users/family/Desktop/page-gift/src/styles/scss/blocks/_promo.scss */
+  .promo-title__descr {
+    font-size: 16px;
+    line-height: 120.62%;
+    color: #000000;
+  }
+  /* line 28, ../../../../../../../../../../../../../Users/family/Desktop/page-gift/src/styles/scss/blocks/_promo.scss */
+  .promo-title__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    height: 45px;
+    background: #F7941E;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #FFFFFF;
+  }
+  /* line 40, ../../../../../../../../../../../../../Users/family/Desktop/page-gift/src/styles/scss/blocks/_promo.scss */
+  .promo-img {
+    margin-top: 50px;
+    width: 100%;
+  }
+  /* line 44, ../../../../../../../../../../../../../Users/family/Desktop/page-gift/src/styles/scss/blocks/_promo.scss */
+  .promo-img img {
+    width: 100%;
+  }
+}
+
+@media (min-width: 320px) {
+  /* line 2, ../../../../../../../../../../../../../Users/family/Desktop/page-gift/src/styles/scss/blocks/_block.scss */
+  .block {
+    width: 100%;
+    background: #F1F1F2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+  }
+  /* line 8, ../../../../../../../../../../../../../Users/family/Desktop/page-gift/src/styles/scss/blocks/_block.scss */
+  .block-img {
+    margin-top: 50px;
+    width: 100%;
+  }
+  /* line 12, ../../../../../../../../../../../../../Users/family/Desktop/page-gift/src/styles/scss/blocks/_block.scss */
+  .block-img img {
+    width: 100%;
+  }
+  /* line 17, ../../../../../../../../../../../../../Users/family/Desktop/page-gift/src/styles/scss/blocks/_block.scss */
+  .block-title {
+    margin: 60px 0 0;
+    width: 290px;
+    height: 260px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  /* line 24, ../../../../../../../../../../../../../Users/family/Desktop/page-gift/src/styles/scss/blocks/_block.scss */
+  .block-title__name {
+    font-size: 26px;
+    line-height: 49px;
+    color: #000000;
+  }
+  /* line 30, ../../../../../../../../../../../../../Users/family/Desktop/page-gift/src/styles/scss/blocks/_block.scss */
+  .block-title__descr {
+    font-size: 16px;
+    line-height: 120.62%;
+    color: #000000;
+    text-align: justify;
+  }
+  /* line 37, ../../../../../../../../../../../../../Users/family/Desktop/page-gift/src/styles/scss/blocks/_block.scss */
+  .block-title__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    height: 45px;
+    background: none;
+    border-radius: 5px;
+    border: 1px solid #F7941E;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #F7941E;
+  }
+}
+
+@media (min-width: 320px) {
+  /* line 2, ../../../../../../../../../../../../../Users/family/Desktop/page-gift/src/styles/scss/blocks/_cards.scss */
+  .cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  /* line 6, ../../../../../../../../../../../../../Users/family/Desktop/page-gift/src/styles/scss/blocks/_cards.scss */
+  .cards-title {
+    margin-top: 60px;
+    font-size: 26px;
+    line-height: 49px;
+    color: #000000;
+  }
+  /* line 13, ../../../../../../../../../../../../../Users/family/Desktop/page-gift/src/styles/scss/blocks/_cards.scss */
+  .cards-descr {
+    font-size: 14px;
+    line-height: 125.94%;
+    text-align: center;
+    color: #000000;
+  }
+}
+
+/* line 10, ../../../../../../../../../../../../../Users/family/Desktop/page-gift/src/styles/scss/style.scss */
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Gilroy-Regular";
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 18, ../../../../../../../../../../../../../Users/family/Desktop/page-gift/src/styles/scss/style.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 19, ../../../../../../../../../../../../../Users/family/Desktop/page-gift/src/styles/scss/style.scss */
+ul {
+  list-style: none;
+}
+
+/* line 20, ../../../../../../../../../../../../../Users/family/Desktop/page-gift/src/styles/scss/style.scss */
+body {
+  max-width: 100%;
+}
+
+@font-face {
+  font-family: 'Gilroy-Regular';
+  src: url(/fonts/Gilroy-Regular.woff2);
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy-Semibold';
+  src: url(/fonts/Gilroy-Semibold.woff2);
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy-Bold';
+  src: url(/fonts/Gilroy-Bold.woff2);
+  font-style: normal;
+}
+
+/*# sourceMappingURL=style.css.map */

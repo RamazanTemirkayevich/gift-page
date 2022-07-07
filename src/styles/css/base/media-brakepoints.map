@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "media-brakepoints.css",
+	"sources": [
+		"../../scss/base/media-brakepoints.scss"
+	],
+	"sourcesContent": [
+		"@mixin mobile {\n    @media (min-width: 320px) {\n        @content\n    }\n}"
+	],
+	"names": [],
+	"mappings": ""
+}
