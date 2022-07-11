@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "img": "card1.png",
+        "altImg": "Birthday",
+        "descr": "Birthday",
+        "link": "See More"
+    },
+    {
+        "id": 2,
+        "img": "card2.png",
+        "altImg": "Anniversary",
+        "descr": "Anniversary",
+        "link": "See More"
+    },
+    {
+        "id": 3,
+        "img": "card3.png",
+        "altImg": "Valentine's Day",
+        "descr": "Valentine's Day",
+        "link": "See More"
+    },
+    {
+        "id": 4,
+        "img": "card4.png",
+        "altImg": "Christmas",
+        "descr": "Christmas",
+        "link": "See More"
+    }
+]

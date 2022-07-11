@@ -6,6 +6,9 @@
 @import './blocks/promo';
 @import './blocks/block';
 @import './blocks/cards';
+@import './blocks/wrapper';
+@import './blocks/blog';
+@import './blocks/footer';
 
 * {
     padding: 0;
@@ -13,6 +16,7 @@
     font-family: $m-font-rg;
     font-weight: normal;
     font-style: normal;
+    color: $b-color;
 }
 
 a {text-decoration: none;}

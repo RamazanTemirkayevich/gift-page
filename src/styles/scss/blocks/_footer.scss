@@ -1,0 +1,133 @@
+@include mobile {
+    .footer {
+        margin-top: 100px;
+        width: 100%;
+        @include flex-center;
+        @include flex-column;
+        background: $g-second-color;
+
+        &-container {
+            .footer-list-01 {
+                margin-top: 50px;
+                text-align: center;
+    
+                &__link {
+                    margin-top: 10px;
+    
+                    a {
+                        font-size: $px-size-mbile-s;
+                        line-height: 120.62%;
+                        color: $b-color;
+                        font-family: $m-font-b;
+                    }
+                }
+            }
+    
+            .footer-logo {
+                margin-top: 25px;
+            }
+    
+            .footer-list-02 {
+                margin-top: 20px;
+                text-align: center;
+    
+                &__link {
+                    margin-top: 10px;
+    
+                    a {
+                        font-size: $px-size-mbile-s;
+                        line-height: 120.62%;
+                        color: $b-color;
+                        font-family: $m-font-b;
+                    }
+                }
+            }
+
+            @include desktop-xs {
+                margin-top: 50px;
+                width: 70%;
+                @include flex-beetwen;
+
+                .footer-list-01, .footer-list-02 {
+                    margin-top: 0;
+                    @include flex-beetwen;
+                    flex-direction: row;
+                    width: 20%;
+                }
+
+                .footer-logo {
+                    margin-top: 0;
+                }
+            }
+        }
+
+        &-divider {
+            margin: 25px;
+            width: 90%;
+            height: 1px;
+            background: $b-color;
+            border: none;
+        }
+
+        &-list__media {
+            margin: 50px;
+            width: 240px;
+            @include flex-beetwen;
+            @include flex-row;
+        }
+
+        &-rigths {
+            width: 250px;
+            @include flex-beetwen;
+            @include flex-row;
+            margin-bottom: 35px;
+
+            p {
+                font-size: $px-size-mbile-s;
+                line-height: 140.62%;
+            }
+        }
+
+        @include desktop-s {
+            margin-top: 80px;
+
+            &-container {
+                margin-top: 115px;
+                width: 614px;
+
+                .footer-list-01, .footer-list-02 {
+                    width: 159px;
+
+                    &__link {
+                        margin-top: 0;
+
+                        a {
+                            font-size: 14px;
+                            line-height: 140.62%;
+                        }
+                    }
+                }
+            }
+
+            &-divider {
+                margin: 43px 0 0 0;
+                width: 1000px;
+            }
+
+            &-list__media {
+                width: 296px;
+                margin: 55px 0 0 0;
+            }
+
+            &-rigths {
+                width: 209px;
+                margin: 72px 0 35px 0;
+
+                p {
+                    font-size: 14px;
+                    line-height: 140.62%;
+                }
+            }
+        }
+    }
+}

@@ -1,5 +1,7 @@
 @include mobile {
     .cards {
+        width: 290px;
+        margin: auto;
         @include flex-center;
         @include flex-column;
 
@@ -7,14 +9,101 @@
             margin-top: 60px;
             font-size: 26px;
             line-height: 49px;
-            color: $b-color;
+
+            @include desktop-s {
+                margin-top: 96px;
+                font-size: 32px;
+                line-height: 38px;
+            }
         }
 
         &-descr {
             font-size: $px-size-mbile-xs;
             line-height: 125.94%;
             text-align: center;
-            color: $b-color;
+
+            @include desktop-s {
+                margin-top: 23px;
+                font-size: $px-size-normal;
+                line-height: 135.94%;
+            }
+        }
+
+        &-wrapper {
+            @include flex-center;
+            @include flex-column;
+
+            &__item {
+                background: #FAFAFA;
+                margin-top: 25px;
+                width: 224px;
+                height: 411px;
+                position: relative;
+                transition: ease-in-out 0.6s all ;
+
+                &--img {
+                    width: 100%;
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                &--descr {
+                    margin: 24px 24px 0 24px;
+                    font-size: $px-size-mbile-s;
+                    line-height: 24px;
+                }
+
+                &--link {
+                    position: absolute;
+                    bottom: 24px;
+                    left: 24px;
+                    font-size: 12px;
+                }
+            }
+
+            &__item:hover {
+                background: $w-color;
+                filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.05));
+            }
+        }
+    }
+}
+
+@include tablet {
+    .cards {
+        width: 90%;
+
+        &-wrapper {
+            @include flex-row;
+            flex-wrap: wrap;
+            width: 80%;
+            justify-content: space-around;
+
+            @include desktop-xs {
+                width: 100%;
+            }
+
+            @include desktop-s {
+                margin-top: 64px;
+                width: 1170px;
+                justify-content: space-between;
+
+                &__item {
+                    width: 270px;
+                    height: 436px;
+
+                    &--descr {
+                        font-size: $px-size-middle;
+                        line-height: 24px;
+                    }
+
+                    &--link {
+                        font-size: 14px;
+                        line-height: 19px;
+                    }
+                }
+            }
         }
     }
 }

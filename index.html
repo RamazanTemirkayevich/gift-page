@@ -5,23 +5,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/styles/css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Test task</title>
 </head>
 <body>
-    <header class="header">
+    <header data-aos="fade-down" data-aos-duration="1000" class="header">
         <div class="header-wrapper">
             <div class="header-wrapper__logo">
-                <img src="/icons/logo.svg">
+                <img src="icons/logo.svg">
             </div>
             <div class="header-wrapper__menu">
                 <span></span>
             </div>
+            <div class="header-wrapper__mobile--menu">
+                <ul class="mobile-menu__list">
+                    <li class="mobile-menu__list--item">
+                        <a href="#">Home</a>
+                    </li>
+                    <li class="mobile-menu__list--item">
+                        <a href="#">About Us</a>
+                    </li>
+                    <li class="mobile-menu__list--item">
+                        <a href="#">Services</a>
+                    </li>
+                    <li class="mobile-menu__list--item">
+                        <a href="#">Blogs</a>
+                    </li>
+                </ul>
+
+                <a href="#" class="mobile-menu__btn">Gift Finder</a>
+            </div>
+            <a href="#" class="header-wrapper__btn">Gift Finder</a>
+            <!-- <nav class="header-wrapper__desktop--menu">
+                <ul class="mobile-menu__list">
+                    <li class="mobile-menu__list--item">
+                        <a href="#">Home</a>
+                    </li>
+                    <li class="mobile-menu__list--item">
+                        <a href="#">About Us</a>
+                    </li>
+                    <li class="mobile-menu__list--item">
+                        <a href="#">Services</a>
+                    </li>
+                    <li class="mobile-menu__list--item">
+                        <a href="#">Blogs</a>
+                    </li>
+                </ul>
+
+                <a href="#" class="mobile-menu__btn">Gift Finder</a>
+            </nav> -->
         </div>
     </header>
 
     <main>
-        <section class="promo">
-            <div class="promo-title">
+        <section data-aos="fade-in" data-aos-duration="1000" class="promo">
+            <div data-aos="fade-left" data-aos-duration="1000" class="promo-title">
                 <h1 class="promo-title__name">
                     Find a gift for <br> your wife or <br> girlfriend
                 </h1>
@@ -29,7 +67,7 @@
                     Struggling to find a gift for your wife or <br> 
                     girlfriend? No problem!
                 </p>
-                <a href="#" class="promo-title__btn">
+                <a href="#" class="animate__fadeInUp promo-title__btn">
                     Find gift now
                 </a>
             </div>
@@ -38,11 +76,11 @@
             </div>
         </section>
 
-        <section class="block">
+        <section data-aos="fade-up" data-aos-duration="1000" class="block">
             <div class="block-img">
                 <img src="images/second-block.png" alt="Gift">
             </div>
-            <div class="block-title">
+            <div data-aos="fade-right" data-aos-duration="1000" class="block-title">
                 <h3 class="block-title__name">
                     How we work
                 </h3>
@@ -60,9 +98,130 @@
             <p class="cards-descr">
                 “Try our web app to find the best gifts for all occasions”
             </p>
+            <div class="cards-wrapper">
+                <!-- from data -->
+            </div>
         </section>
+
+        <section data-aos="fade-up" data-aos-duration="2000" class="wrapper">
+            <div class="wrapper-description">
+                <h3 class="wrapper-description__name">Ready to get started?</h3>
+                <p class="wrapper-description__title">
+                    Sign up or contact us
+                </p>
+            </div>
+            <div class="wrapper-buttons">
+                <a href="#" class="wrapper-buttons__find">
+                    Find gift now
+                </a>
+                <a href="#" class="wrapper-buttons__works">
+                    How it work
+                </a>
+            </div>
+        </section>
+
+        <section class="blog">
+            <h3 class="blog-title">Our Best Blogs Ever</h3>
+            <p class="blog-descr">
+                “Try our blog to find the best tips and tricks to select your gift”
+            </p>
+            <div data-aos="fade-up" data-aos-duration="2000" class="blog-wrapper">
+                <div class="blog-wrapper__img">
+                    <img src="images/last-block.png" alt="blog iamge">
+                </div>
+                <div class="blog-wrapper__descr">
+                    <p class="blog-wrapper__descr--title">Mr. John Doe</p>
+                    <h3 class="blog-wrapper__descr--name">The best way to wish your wife</h3>
+                    <a href="#" class="blog-wrapper__descr--link">Read More</a>
+                </div>
+            </div>
+            <div class="blog-cards">
+                <div class="blog-cards__item">
+                    <h3 class="blog-cards__item--title">Database to find the gifts for your girlfriend</h3>
+                    <p class="blog-cards__item--descr">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore...
+                    </p>
+                    <p class="blog-cards__item--hidden">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore. Magni ducimus quod natus doloribus expedita quasi earum asperiores voluptas, aut possimus quas facere, alias ipsa est. Rerum consectetur esse assumenda dolores?
+                    </p>
+                    <button class="blog-cards__item--link">Read More</button>
+                    <button class="blog-cards__item--text">Hidde text</button>
+                </div>
+                <div class="blog-cards__item">
+                    <h3 class="blog-cards__item--title">How Artificial Intelligence read your mind to find the best gift</h3>
+                    <p class="blog-cards__item--descr">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore...
+                    </p>
+                    <p class="blog-cards__item--hidden">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore. Magni ducimus quod natus doloribus expedita quasi earum asperiores voluptas, aut possimus quas facere, alias ipsa est. Rerum consectetur esse assumenda dolores?
+                    </p>
+                    <button class="blog-cards__item--link">Read More</button>
+                    <button class="blog-cards__item--text">Hidde text</button>
+                </div>
+            </div>
+        </section>
+
+        <footer data-aos="fade-up" data-aos-duration="2000" class="footer">
+            <div class="footer-container">
+                <ul class="footer-list-01">
+                    <li class="footer-list-01__link">
+                        <a href="#">Home</a>
+                    </li>
+                    <li class="footer-list-01__link">
+                        <a href="#">About</a>
+                    </li>
+                </ul>
+                <div class="footer-logo">
+                    <img src="/icons/logoFooter.svg">
+                </div>
+                <ul class="footer-list-02">
+                    <li class="footer-list-02__link">
+                        <a href="#">Service</a>
+                    </li>
+                    <li class="footer-list-02__link">
+                        <a href="#">Blog</a>
+                    </li>
+                </ul>
+            </div>
+            <hr class="footer-divider">
+            <ul class="footer-list__media">
+                <li class="footer-list__media--link">
+                    <a href="#">
+                        <img src="/icons/fb.svg" alt="">
+                    </a>
+                </li>
+                <li class="footer-list__media--link">
+                    <a href="#">
+                        <img src="/icons/tw.svg" alt="">
+                    </a>
+                </li>
+                <li class="footer-list__media--link">
+                    <a href="#">
+                        <img src="/icons/inst.svg" alt="">
+                    </a>
+                </li>
+                <li class="footer-list__media--link">
+                    <a href="#">
+                        <img src="/icons/yt.svg" alt="">
+                    </a>
+                </li>
+                <li class="footer-list__media--link">
+                    <a href="#">
+                        <img src="/icons/pt.svg" alt="">
+                    </a>
+                </li>
+            </ul>
+            <div class="footer-rigths">
+                <p>© 2010 — 2020</p>
+                <p>Privacy — Terms</p>
+            </div>
+        </footer>
     </main>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="src/scripts/main.js"></script>
 </body>
 </html>

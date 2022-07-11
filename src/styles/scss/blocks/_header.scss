@@ -1,13 +1,24 @@
 @include mobile {
     .header {
+        position: fixed;
         width: 100%;
         height: 70px;
         background: $g-second-color;
         @include flex-center;
+        z-index: 1;
 
         &-wrapper {
             width: 90%;
             @include flex-beetwen;
+
+            &__logo {
+                @include desktop-s {
+                    width: 41px;
+                    height: 39px;
+
+                    img {width: 100%;}
+                }
+            }
             
             &__menu {
                 display: block;
@@ -15,6 +26,10 @@
                 width: 25px;
                 height: 20px;
                 z-index: 2;
+
+                @include desktop-xs {
+                    display: none;
+                }
             }
 
             &__menu span {
@@ -76,6 +91,128 @@
                     bottom: 9px;
                 }
             }
+
+            &__mobile--menu {
+                position: fixed;
+                top: 0;
+                left: -100%;
+                width: 200px;
+                height: 100%;
+                background-color: $b-second-color;
+                transition: 0.7s;
+
+                .mobile-menu__list {
+                    margin: 30px;
+
+                    &--item {
+                        margin-top: 15px;
+
+                        a {
+                            color: $w-color;
+                            font-size: $px-size-mbile-s;
+                        }
+                    }
+
+                    &--item:first-child {
+                        margin-top: 0;
+                    }
+                }
+
+                .mobile-menu__btn {
+                    margin: 20px;
+                    @include flex-center;
+                    width: 139px;
+                    height: 38px;
+                    background: none;
+                    border-radius: $radius;
+                    border: 1px solid $main-color;
+                    text-transform: $upper-case;
+                    font-size: $px-size-mbile-xs;
+                    color: $main-color;
+                }
+
+                &__active {
+                    left: 0;
+                }
+
+                @include desktop-xs {
+                    width: 300px;
+                    position: inherit;
+                    @include flex-center;
+                    @include flex-row;
+                    background-color: inherit;
+
+                    .mobile-menu__list {
+                        width: 100%;
+                        @include flex-beetwen;
+                        @include flex-row;
+                        margin: unset;
+
+                        &--item {
+                            margin-top: unset;
+
+                            a {
+                                color: $b-color;
+                            }
+                        }
+                    }
+
+                    .mobile-menu__btn {
+                        display: none;
+                    }    
+                }
+
+                @include desktop-s {
+                    width: 331px;
+
+                    .mobile-menu__list {
+                        &--item a {font-size: $px-size-normal;}
+                    }
+                }
+            }
+
+            &__btn {
+                display: none;
+
+                @include desktop-xs {
+                    @include flex-center;
+                    width: 139px;
+                    height: 38px;
+                    background: none;
+                    border-radius: $radius;
+                    border: 1px solid $main-color;
+                    text-transform: $upper-case;
+                    font-size: $px-size-mbile-xs;
+                    color: $main-color;
+                }
+            }
+
+            @include desktop-s {
+                // position: relative;
+                justify-content: unset;
+                width: 1320px;
+
+                &__mobile--menu {
+                    position: unset;
+                    margin-left: 433px;
+                }
+
+                &__btn {
+                    position: absolute;
+                    right: 34px;
+                    width: 150px;
+                    height: 43.5px;
+                    font-size: $px-size-normal;
+                }
+            }
         }
-    }
+
+        @include desktop-xs {
+            position: inherit;
+        }
+
+        @include desktop-s {
+            height: 116px;
+        }
+    }    
 }

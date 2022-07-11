@@ -6,6 +6,7 @@
         flex-direction: column-reverse;
 
         &-img {
+            display: flex;
             margin-top: 50px;
             width: 100%;
 
@@ -24,13 +25,11 @@
             &__name {
                 font-size: 26px;
                 line-height: 49px;
-                color: $b-color;
             }
 
             &__descr {
                 font-size: $px-size-mbile-s;
                 line-height: 120.62%;
-                color: $b-color;
                 text-align: justify
             }
 
@@ -45,6 +44,70 @@
                 font-size: $px-size-mbile-xs;
                 color: $main-color;
             }
+        }
+    }
+}
+
+@include tablet {
+    .block {
+        justify-content: space-between;
+        @include flex-row;
+
+        &-img {
+            width: 50%;
+            display: flex;
+            margin-top: 0;
+
+            @include desktop-s {
+                width: 721px;
+                height: 600px;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+
+        &-title {
+            margin-right: 50px;
+            margin-top: 0;
+
+            @include desktop-xs {
+                margin-right: 100px;
+            }
+
+            @include desktop-s {
+                width: 441px;
+                height: unset;
+                justify-content: flex-start;
+                margin-top: 164px;
+                margin-left: 112px;
+
+                &__name {
+                    font-size: 32px;
+                    line-height: 140.62%;
+                }
+
+                &__descr {
+                    margin-top: 23px;
+                    font-size: $px-size-middle;
+                    line-height: 140.62%;
+                }
+
+                &__btn {
+                    margin-top: 35px;
+                    width: 200px;
+                    height: 60px;
+                    font-size: $px-size-normal;
+                    line-height: 134.77%;
+                }
+            }
+        }
+
+        @include desktop-s {
+            justify-content: flex-start;
+            align-items: unset;
         }
     }
 }
